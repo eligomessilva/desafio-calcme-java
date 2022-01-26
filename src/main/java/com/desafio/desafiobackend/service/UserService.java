@@ -11,7 +11,7 @@ public class UserService {
     @Autowired()
     private IUserRepository userRepository;
 
-    public UserRegisterDto save(String name, String email) {
-        return userRepository.save(new UserRegisterDto(name, email));
+    public UserRegisterDto save(String name, String email, String phone) {
+        return userRepository.save(new UserRegisterDto(name, email, phone));
     }
 }

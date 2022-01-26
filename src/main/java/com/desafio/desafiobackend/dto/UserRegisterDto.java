@@ -10,9 +10,11 @@ public class UserRegisterDto {
     private String id;
     public String email;
     public String name;
+    public String phone;
 
-    public UserRegisterDto(String name, String email) {
+    public UserRegisterDto(String name, String email, String phone) {
         this.name = name;
         this.email = email;
+        this.phone = phone;
     }
 }
